@@ -42,11 +42,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Breakers\LineBreaker.cs" />
+    <Compile Include="Enums\Stuffing.cs" />
+    <Compile Include="Enums\Taste.cs" />
+    <Compile Include="Interfaces\IReadFiles.cs" />
+    <Compile Include="Models\Candy.cs" />
+    <Compile Include="Models\Fruit.cs" />
+    <Compile Include="Models\Gift.cs" />
+    <Compile Include="Models\Sweetness.cs" />
+    <Compile Include="Models\Wafer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
