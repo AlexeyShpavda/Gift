@@ -42,9 +42,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Breakers\LineBreaker.cs" />
-    <Compile Include="Enums\Stuffing.cs" />
-    <Compile Include="Enums\Taste.cs" />
+    <Compile Include="Breaker\LineBreaker.cs" />
+    <Compile Include="Enum\Stuffing.cs" />
+    <Compile Include="Enum\Taste.cs" />
     <Compile Include="Interfaces\IReadFiles.cs" />
     <Compile Include="Models\Candy.cs" />
     <Compile Include="Models\Fruit.cs" />

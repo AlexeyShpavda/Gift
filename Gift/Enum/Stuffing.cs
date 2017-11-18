@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace Gift.Enums
 {
-    public enum Taste
-    {
-        Vanilla,
-        Almond,
-        Limon
+    public enum Stuffing
+    {//
+        Nut,
+        Marmalade,
+        Fudge,
+        NoStuffing
     }
 }
