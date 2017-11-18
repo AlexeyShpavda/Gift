@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Gift.Enums
 {
     public enum Taste
-    {//
+    {
         Vanilla,
         Almond,
         Limon
