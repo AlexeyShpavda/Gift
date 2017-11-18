@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C5EE239C-1B60-44BF-990F-93F15EA0B36E}</ProjectGuid>
+    <ProjectGuid>{5EA5EBDC-A383-4290-8E6C-A416B7468EDA}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Gifts</RootNamespace>
-    <AssemblyName>Gifts</AssemblyName>
+    <RootNamespace>Gift</RootNamespace>
+    <AssemblyName>Gift</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
