@@ -43,5 +43,47 @@ namespace Gift.Models
             return str;
         }
 
+        public bool ContainFruit()
+        {
+            foreach (var sweetness in gift)
+            {
+                if (sweetness is Fruit)
+                {
+                    return true;
+                }
+            }
+            return true;
+        }
+
+        public int ReturnsWeight()
+        {
+            int weight = 0;
+            foreach (var sweetness in gift)
+            {
+                weight += sweetness.Weight;
+            }
+            return weight;
+        }
+
+        public void DeleteHeaviestCandy()
+        {
+            int _maxWeight = 0;
+            int _candyIndex = -1;
+            for (var i = 0; i < gift.Count; i++)
+            {
+                if (gift[i] is Candy && _maxWeight < gift[i].Weight)
+                {
+                    _maxWeight = gift[i].Weight;
+                    _candyIndex = i;
+                }
+            }
+            if (_candyIndex < 0)
+            {
+                return;
+            }
+            gift.RemoveAt(_candyIndex);
+        }
+
+
     }
 }

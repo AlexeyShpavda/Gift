@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Gift.Models
 {
-    abstract class Sweetness
+    abstract class Sweetness :IComparable<Sweetness>
     {
         private string _name;
         private short _weight;
@@ -15,10 +15,10 @@ namespace Gift.Models
         private double _price;
         // Per 1 kilogram.
 
-        protected string Name { get => _name; set => _name = value; }
-        protected short Weight { get => _weight; set => _weight = value; }
-        protected short Caloricity { get => _caloricity; set => _caloricity = value; }
-        protected double Price { get => _price; set => _price = value; }
+        public string Name { get => _name; set => _name = value; }
+        public short Weight { get => _weight; set => _weight = value; }
+        public short Caloricity { get => _caloricity; set => _caloricity = value; }
+        public double Price { get => _price; set => _price = value; }
 
         public Sweetness(string name, string weight, string caloricity, string price)
         {
@@ -32,6 +32,16 @@ namespace Gift.Models
         {
             return String.Format("Name: {0,-10}|Weight: {1,-4}|Caloricity: {2,-3}|Price: {3,-4}",
                 Name, Weight, Caloricity, Price);
+        }
+
+        public int CompareTo(Sweetness obj)
+        {
+            if (Caloricity > obj.Caloricity)
+                return 1;
+            if (Caloricity < obj.Caloricity)
+                return -1;
+            else
+                return 0;
         }
     }
 }
