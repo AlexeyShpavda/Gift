@@ -23,15 +23,24 @@ namespace Gift.Models
                 while ((str = reader.ReadLine()) != null)
                 {
                     string[] words = LineBreaker.ReturnWordArr(' ', str, 1);
-                    //if (str[0] == '')
-                    //    gift.Add(new );
-                    //else if (str[0] == '')
-                    //    gift.Add(new );
-                    //else if (str[0] == '')
-                    //    gift.Add(new );
-
+                    if (str[0] == 'C')
+                        gift.Add(new Candy(words[0], words[1], words[2], words[3], words[4], words[5]));
+                    else if (str[0] == 'W')
+                        gift.Add(new Wafer(words[0], words[1], words[2], words[3], words[4], words[5]));
+                    else if (str[0] == 'F')
+                        gift.Add(new Fruit(words[0], words[1], words[2], words[3], words[4], words[5]));
                 }
             }
+        }
+
+        public override string ToString()
+        {
+            string str = String.Empty;
+            foreach (var element in gift)
+            {
+                str += element.ToString() + "\r\n";
+            }
+            return str;
         }
 
     }

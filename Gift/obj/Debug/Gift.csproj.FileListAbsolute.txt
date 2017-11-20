@@ -1,0 +1,7 @@
+E:\Programs\C#\Gift\Gift\bin\Debug\Gift.exe.config
+E:\Programs\C#\Gift\Gift\bin\Debug\Gift.exe
+E:\Programs\C#\Gift\Gift\bin\Debug\Gift.pdb
+E:\Programs\C#\Gift\Gift\obj\Debug\Gift.csprojResolveAssemblyReference.cache
+E:\Programs\C#\Gift\Gift\obj\Debug\Gift.csproj.CoreCompileInputs.cache
+E:\Programs\C#\Gift\Gift\obj\Debug\Gift.exe
+E:\Programs\C#\Gift\Gift\obj\Debug\Gift.pdb
