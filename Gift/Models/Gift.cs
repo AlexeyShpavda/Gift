@@ -9,7 +9,7 @@ using Gift.Breakers;
 
 namespace Gift.Models
 {
-    class Gift : IReadFiles
+    class Gift : IReadFiles, IWriteToFiles
     {
         List<Sweetness> _gift = new List<Sweetness>();
 
@@ -84,6 +84,34 @@ namespace Gift.Models
             gift.RemoveAt(_candyIndex);
         }
 
+        public double СalculatesPrice()
+        {
+            double price = 0;
+            foreach (Sweetness sweet in gift)
+            {
+                price += sweet.ReturnsPrice();
+            }
+            return price;
+        }
+
+        public int СalculatesWeight()
+        {
+            int weight = 0;
+            foreach (Sweetness sweet in gift)
+            {
+                weight += sweet.Weight;
+            }
+            return weight;
+        }
+
+        public void WriteToFiles(string fileName)
+        {
+            using (StreamWriter writer = new StreamWriter(fileName))
+            {
+                writer.Write(ToString());
+                writer.WriteLine("Weight: " + СalculatesWeight() + " | " + "Price: " + СalculatesPrice());
+            }
+        }
 
     }
 }

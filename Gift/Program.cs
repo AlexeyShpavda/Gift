@@ -51,8 +51,12 @@ namespace Gift
             Console.WriteLine(l);
 
 
+            // Calculating the cost of a gift.
+            Console.WriteLine("Price:" + gift.СalculatesPrice());
+            Console.WriteLine(l);
 
-
+            // Records the composition of the gift, weight and price in a file.
+            gift.WriteToFiles("output.txt");
 
             Console.ReadKey();
         }

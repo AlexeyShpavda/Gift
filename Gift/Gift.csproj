@@ -46,6 +46,7 @@
     <Compile Include="Enums\Stuffing.cs" />
     <Compile Include="Enums\Taste.cs" />
     <Compile Include="Interfaces\IReadFiles.cs" />
+    <Compile Include="Interfaces\IWriteToFiles.cs" />
     <Compile Include="Models\Candy.cs" />
     <Compile Include="Models\Fruit.cs" />
     <Compile Include="Models\Gift.cs" />

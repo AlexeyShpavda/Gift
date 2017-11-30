@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace Gift.Models
 {
-    abstract class Sweetness :IComparable<Sweetness>
+    abstract class Sweetness : IComparable<Sweetness>
     {
         private string _name;
         private short _weight;
         private short _caloricity;
         // By 100 grams.
         private double _price;
-        // Per 1 kilogram.
+        // For 1 kilogram.
 
         public string Name { get => _name; set => _name = value; }
         public short Weight { get => _weight; set => _weight = value; }
@@ -42,6 +42,11 @@ namespace Gift.Models
                 return -1;
             else
                 return 0;
+        }
+
+        public double ReturnsPrice()
+        {
+            return (Price / 1000) * Weight;
         }
     }
 }
