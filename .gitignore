@@ -1,6 +1,6 @@
 .vs/
-Gift/obj/
-Gift/Gift.csproj
-Gift/App.config
-Gift/Properties
-Gift/bin
+#Gift/obj/
+#Gift/Gift.csproj
+#Gift/App.config
+#Gift/Properties
+#Gift/bin
