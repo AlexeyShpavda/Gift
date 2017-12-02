@@ -34,7 +34,7 @@ namespace Gift
             Console.WriteLine(l);
 
             // Сalculate weight of the gift, if weight of the gift is more than 1 kg we remove the heaviest candy.
-            if (gift.ReturnsWeight() > 1000)
+            if (gift.СalculatesWeight() > 1000)
             {
                 gift.DeleteHeaviestCandy();
             }

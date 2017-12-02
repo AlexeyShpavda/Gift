@@ -52,17 +52,7 @@ namespace Gift.Models
                     return true;
                 }
             }
-            return true;
-        }
-
-        public int ReturnsWeight()
-        {
-            int weight = 0;
-            foreach (var sweetness in gift)
-            {
-                weight += sweetness.Weight;
-            }
-            return weight;
+            return false;
         }
 
         public void DeleteHeaviestCandy()
